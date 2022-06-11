@@ -17,7 +17,7 @@ Also to avoid model drifting, MLflow can be used to retrain models constantly an
 * Conditional failure logic
 * Timeouts
 
-## Introductio to Prefect 2.0
+## Introduction to Prefect 2.0
 
 Prefect Core is 1.0 and Prefect Orion is 2.0.
 
@@ -91,7 +91,7 @@ prefect work-queue preview <work-queue-id>
 
 In order to start scheduled runs, we need to use the agent:
 ```
-prefect work-queue preview <work-queue-id>
+prefect agent start <work-queue-id>
 ```
 
 
