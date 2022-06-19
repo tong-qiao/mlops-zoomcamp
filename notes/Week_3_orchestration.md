@@ -94,4 +94,10 @@ In order to start scheduled runs, we need to use the agent:
 prefect agent start <work-queue-id>
 ```
 
+## Tips
+
+Clear prefect storage:
+```
+prefect orion database reset
+```
 
