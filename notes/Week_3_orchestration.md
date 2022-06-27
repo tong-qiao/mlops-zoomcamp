@@ -61,7 +61,7 @@ prefect orion start --host 0.0.0.0
 ```
 prefect config set PREFECT_API_URL="http://<external-ip>:4200/api"
 ```
-7. The remote UI will be visible on :4200/
+7. The remote UI will be visible on :4200/ and the code can be run locally against the remote Orion server.
 
 At anytime, we can use the following command to check Prefect config and unset it:
 ```
@@ -78,6 +78,7 @@ Configuration:
 # location - /Users/tongqiao/.prefect
 # name - local
 ```
+Once configured, the storage will be registered with an identifier ID.
 
 Deployment:
 ```
@@ -93,6 +94,8 @@ In order to start scheduled runs, we need to use the agent:
 ```
 prefect agent start <work-queue-id>
 ```
+
+To start a run immediately, we can hit 'run' in 'Deployments'.
 
 ## Tips
 
